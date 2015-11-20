@@ -34,7 +34,7 @@
     <OutputPath>bin\Nuget35\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
-	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Nuget40|AnyCPU'">
     <OutputPath>bin\Nuget40\</OutputPath>
@@ -63,6 +63,12 @@
     <Compile Include="Configuration\ExcludeElement.cs" />
     <Compile Include="Configuration\ExcludeElementCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\basicAuthentication.config" />
+    <None Include="Devbridge.BasicAuthentication.nuspec" />
+    <None Include="web.config.install.xdt" />
+    <None Include="web.config.uninstall.xdt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
