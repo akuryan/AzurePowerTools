@@ -34,6 +34,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Nuget35|AnyCPU'">
+    <OutputPath>bin\Nuget35\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Nuget40|AnyCPU'">
+    <OutputPath>bin\Nuget40\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Common.Logging">
       <HintPath>..\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll</HintPath>
